@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="navbar" class="navbar">
+        <header>Phyton Documentacion</header>
+        <a href="#Introduccion" class="nav-link a">Introduccion</a>
+        <a href="#Que_cosas_ya_deberias_saber?" class="nav-link">Que cosas ya deberias saber?</a>
+        <a href="#Phyton" class="nav-link a" >Phyton</a>
+        <a href="#Hello_World" class="nav-link">Hello World</a>
+        <a href="#Variables" class="nav-link a">Variables</a>
+        <a href="#Principales_Funciones" class="nav-link">Principales Funciones</a>
+        
+        <a href="#Referencias" class="nav-link a">Referencias</a>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="Introduccion">
+           <header>Introduccion</header>
+           
+           <p>Este tutorial no pretende ser exhaustivo ni cubrir cada una de las características del lenguaje, ni siquiera las más utilizadas. En vez de eso, pretende introducir muchas de las funcionalidades más notables y brindar una idea clara acerca del estilo y el tipo de lenguaje que es Python. Después de leerlo podrás leer y escribir módulos y programas en Python, y estarás listo para aprender más acerca de las diversas librerías y módulos descritos en La Biblioteca Estándar de Python.</p>
+        </section>
+       <section class="main-section" id="Que_cosas_ya_deberias_saber?">
+           <header>Que cosas ya deberias saber?</header>
+           <ul>
+               <li>Diagramas de flujo</li>
+               <li>Escribir en una computadora</li>
+               <li>Conceptos de POO</li>
+           </ul>
+        </section>
+       <section class="main-section" id="Phyton">
+           <header>Phyton</header>
+           <p>Python es un lenguaje de programación potente y fácil de aprender. Tiene estructuras de datos de alto nivel eficientes y un simple pero efectivo sistema de programación orientado a objetos. La elegante sintaxis de Python y su tipado dinámico, junto a su naturaleza interpretada lo convierten en un lenguaje ideal para scripting y desarrollo rápido de aplicaciones en muchas áreas, para la mayoría de plataformas.</p>
+           <p>Python es un lenguaje interpretado, lo cual puede ahorrarte mucho tiempo durante el desarrollo ya que no es necesario compilar ni enlazar. El intérprete puede usarse interactivamente, lo que facilita experimentar con características del lenguaje, escribir programas desechables o probar funciones cuando se hace desarrollo de programas de abajo hacia arriba. Es también una calculadora de escritorio práctica.
+           </p>
+        </section>
+       <section class="main-section" id="Hello_World">
+           <header>Hello World</header>
+           <p>Ya que Python es un lenguaje de programacion no necesitamos compilar por ende podemos escribir funciones muy simples como por ejemplo</p>
+           <code>
+               print("Hello World")<br>
+               >>> Hello World<br><br><br>
+           </code>
+           Nosotros al ejecutar este codigo nos mostraria el famoso hola mundo que se suele ejemplofocar en muchos lenguajes de programacion
+        </section>
+       <section class="main-section" id="Variables">
+           <header>Variables</header>
+           <p>Tenemos 4 tipos de variables</p>
+           <ul>
+               <li>
+                   <h3>Int</h3>
+                   <p>Los tipos de variables enteros en Python (int) se utilizan para representar datos numéricos, específicamente números enteros. Estos pueden ser tanto positivos como negativos.</p>
+               </li>
+               <li>
+                   <h3>Float</h3>
+                   <p>Los tipos de datos flotantes en Python (float) se utilizan para representar números de coma flotante o con decimales. </p>
+               </li>
+               <li>
+                   <h3>Boolean</h3>
+                   <p>Los tipos primitivos booleanos en python (bool) son tipos de datos binarios, es decir que pueden tomar los valores: Verdadero (True) y Falso (False). Son útiles para expresiones con condicionales y de comparaciones.</p>
+               </li>
+               <li>
+                   <h3>String</h3>
+                   <p>Los tipos de datos String en Python son un arreglo de caracteres que forman cadenas para formar un mensaje o oración generalmente. Se pueden crear usando comillas simples, dobles o triples. </p>
+               </li>
+           </ul>
+        </section>
+        <section class="main-section" id="Principales_Funciones">
+            <header>Principales Funciones</header>
+            <ul>
+                <li>
+                    <h3>If</h3>
+                    <p>Tal vez el tipo más conocido de sentencia sea el if. funciona de esta manera:</p>
+                    <code>
+                        if condicion:<br>
+                            &nbsp;&nbsp;&nbsp;&nbsp; proceso si es true<br>
+                        elif condicion:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;proceso si el anterior es false y este es true<br>
+                        else:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;procesiso si todo es falso<br>    
+                            .<br>
+                            .<br>
+                            .<br>
+                            .<br>
+                        >>> x = int(input("Please enter an integer: "))<br>
+                        Please enter an integer: 42<br>
+                        >>> if x < 0:<br>
+                        ...     &nbsp;&nbsp;&nbsp;&nbsp;x = 0<br>
+                        ...     &nbsp;&nbsp;&nbsp;&nbsp;print('Negative changed to zero')<br>
+                        ... elif x == 0:<br>
+                        ...     &nbsp;&nbsp;&nbsp;&nbsp;print('Zero')<br>
+                        ... elif x == 1:<br>
+                        ...     &nbsp;&nbsp;&nbsp;&nbsp;print('Single')<br>
+                        ... else:<br>
+                        ...     &nbsp;&nbsp;&nbsp;&nbsp;print('More')<br>
+                        ...<br>
+                        More<br>
+                        </code>
+
+                </li>
+                <li>
+                    <h3>For</h3>
+                    <p>La sentencia for en Python difiere un poco de lo que uno puede estar acostumbrado en lenguajes como C o Pascal. En lugar de siempre iterar sobre una progresión aritmética de números (como en Pascal) o darle al usuario la posibilidad de definir tanto el paso de la iteración como la condición de fin (como en C), la sentencia for de Python itera sobre los ítems de cualquier secuencia (una lista o una cadena de texto), en el orden que aparecen en la secuencia</p>
+                    <code>
+                        for item in lista de items:<br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;accion que se hara con cada item(item)<br>
+                            <br>
+                            .<br>
+                            .<br>
+                            .<br>
+                            .<br>
+                        >>> # Measure some strings:<br>
+                        ... words = ['cat', 'window', 'defenestrate']<br>
+                        >>> for w in words:<br>
+                        ...&nbsp;&nbsp;&nbsp;&nbsp;print(w, len(w))<br>
+                        ...<br>
+                        cat 3<br>
+                        window 6<br>
+                        defenestrate 12<br>    
+                    </code>
+                </li>
+                <li>
+                    <h3>match</h3>
+                    <p>La forma más simple compara un valor, el «sujeto», con uno o más literales:</p>
+                    <code>
+                        match variable:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;case condicion1:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;accion en caso de que se cumpla con esta condicion;<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;case _:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;accion en caso ningun otro caso cumpla con la condicion<br> 
+                                <br> 
+                        match status:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;case 400:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Bad request"<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;case 404:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Not found"<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;case 418:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "I'm a teapot"<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;case _:<br> 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return "Something's wrong with the internet"<br> 
+                    </code>
+                </li>
+                <li>
+                    <h3>While</h3>
+             <p>Ciclo repetitivo que seguira ejecutando la funcion hasta que la condicion sea negativa</p>   
+             <code>
+                 while(condicion):<br> 
+                 &nbsp;&nbsp;&nbsp;&nbsp;funcion<br> 
+
+                >>> while (true):<br> 
+                ...&nbsp;&nbsp;&nbsp;&nbsp;print(Hello)<br> 
+                ...<br> 
+                Hello<br> 
+                Hello<br> 
+                Hello<br> 
+                Hello<br> 
+                . <br> 
+                . <br> 
+                . <br> 
+                >>> Asi infinitamente porque la condicion nunca sera falsa<br>    
+             </code>
+                </li>
+                
+            </ul>
+        
+        
+         <section class="main-section" id="Referencias">
+            <header>Referencias</header>
+                <ol>
+                    <li><a href="https://docs.python.org/es/3/tutorial/controlflow.html">Documentacion de Phyton</a></li>
+                    <li><a href="https://controlautomaticoeducacion.com/python-desde-cero/tipos-de-datos/">Variables de phyton</a></li>
+                </ol>
+            
+         </section>
+        
+    </main>
+</body>
+</html>
